@@ -1,0 +1,197 @@
+body {
+    font-family: system-ui;
+    background: black;
+    color: white;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .btn{
+    font-size:24px;
+    color:pink;
+    margin-top:200px;
+    padding:10px 15px;
+    border:5px solid pink;
+    transition:all 0.5s ease-out 1s;
+  /*   transition-property:transform;
+    transition-duration:0.5s;
+    trasition-timing-function:ease;
+    transition-delay:0s; */
+  }
+  
+  .btn:hover{
+    transform:translateY(-10px);
+    background-color:green;
+    color:var(--clr-light)
+  }
+
+
+
+
+  body {
+    font-family: system-ui;
+    background: black;
+    color: white;
+    text-align: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .heading-1{
+    font-size:24px;
+    color:pink;
+    margin-top:200px;
+    padding:10px 15px;
+    border:5px solid pink;
+    
+  /*   transition-property:transform;
+    transition-duration:0.5s;
+    trasition-timing-function:ease;
+    transition-delay:0s; */
+  }
+  
+  /*  utility class*/
+  
+  .animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate.animate--infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  .animate.animate--delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate.animate--fast {
+    animation-duration: 1s;
+  }
+  
+  .animate.animate--slow {
+    animation-duration: 3s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @keyframes SlideInLeft {
+    from{
+      transform : translateX(-300px)
+    }
+    
+    to {
+      transform : translateX(0)
+    }
+  }
+  
+  /* .heading-1{
+    animation-name : SlideInLeft;
+    animation-duration:2s;
+    animation-delay:0s;
+    animation-iteration-count:2;
+    animation-time-function:ease;
+    animation-direction:normal;
+    animation-fill-mode:both;
+    
+    transform:translateX(-150px)
+  } */
+  
+  
+  .SlideInLeft{
+    animation:SlideInLeft;
+    animation-time-function:ease-in-out;
+  }
+  
+  @keyframes rotate{
+    from {
+      transform:rotate(0)
+    }
+    
+    to {
+      transform:rotate(360deg)
+    }
+    
+  }
+  
+  .rotate{
+    animation-name: rotate;
+    animation-time-function:linear;
+    
+    transform-origin:top right;
+  }
+  
+  
+  @keyframes bounce{
+  /*   0%,20%,40%,60%,80%,100% { */
+    from {
+      transform:translateY(0px)
+    }
+    
+   to {
+      transform:translateY(-50px)
+    }
+    
+  /*   30% {
+      transform:translateY(-50px)
+    }
+    50% {
+      transform:translateY(-50px)
+    }
+    70% {
+      transform:translateY(-50px)
+    }
+    90% {
+      transform:translateY(-50px)
+    } */
+    
+  }
+  
+  .bounce{
+    animation:bounce;
+    
+  }
+  
+  
+  
+  
+  @keyframes showbackground {
+  /*      0%,20%,40%,60%,80%,100% {
+      background-color:pink;
+    }
+    
+    10%{
+      background-color:green;
+    }
+    
+    30% {
+      background-color:green;
+    }
+    50% {
+      background-color:green;
+    }
+    70% {
+      background-color:green;
+    }
+    90% {
+      background-color:green;
+    } */
+    
+     from {
+      background-color:green;
+    }
+    
+   to {
+      background-color:yellow;
+    }
+  }
+  
+  .showbackground{
+    animation:showbackground;
+    animation-time-function:normal;
+  }

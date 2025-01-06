@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    src: url(Fonts/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+@font-face
+{
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: Montserrat;
+}
+
+body{
+    line-height: 1.6rem;
+    font-family: Roboto-Regular, Montserrat;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "about"
+    "projects"
+    "contact";
+    gap: 1.6rem;
+    padding: 1.6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    grid-area: header;
+    padding: 3rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+section{
+    background-color: rgb(250, 249, 247);
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav{
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 8px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover{
+    background-color: blueviolet;
+}
+
+.about{
+    grid-area: about;
+    padding: 2rem;
+    background-color: rgb(250, 249, 247);
+}
+/* .about h2{
+    font-size: 1.5rem;
+    padding: 10px;
+} */
+
+
+
+section h2{
+    padding: 10px 0;
+    font-size: 1.5rem;
+    
+}
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-card{
+    border-radius: 10px;
+    margin: 1rem 0;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card h3{
+    padding: 10px 0;
+    font-size:1.2rem ;
+}
+
+.project-card p{
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.project-card:hover{
+    transform: translatey(-5px);
+}
+
+section p{
+    padding: 10px 0;
+}
+
+.footer{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: rgb(7, 7, 7);
+    text-align: center;
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+@media (min-width:720px){
+    .project-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1120px){
+    .project-grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,30 @@
+
+@font-face{
+    src: url(Fonts/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+@font-face
+{
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: Montserrat;
+}
+*{
+    font-family: Montserrat,Roboto-Regular;
+    background-color: white;
+}
+
+.container{
+    background-color: blanchedalmond;
+}
+
+#header{
+    color: black;
+    font-size: 1.5em;
+}
+p{
+    color: rgb(30, 146, 111);
+    font-weight: 500;
+    font-size:1em;
+}
+
+

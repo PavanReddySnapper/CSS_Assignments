@@ -1,0 +1,45 @@
+
+@font-face{
+    src: url(Fonts/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+@font-face
+{
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: Montserrat;
+}
+*{
+    font-family: Montserrat,Roboto-Regular;
+    background-color: rgb(163, 132, 154);
+}
+
+.container{
+    background-color: blanchedalmond;
+}
+
+#header{
+    color: black;
+    font-size: 30px;
+}
+p{
+    font-size: 24px;
+}
+
+.btn{
+    background-color: brown;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: aqua;
+}
+
+.para:nth-child(2){
+      color: blueviolet;
+}
+
+.para:nth-of-type(2){
+color: aqua;
+}
+
