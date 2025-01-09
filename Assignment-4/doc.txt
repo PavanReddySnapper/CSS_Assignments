@@ -1,0 +1,9 @@
+Created a webpage showcasing the box model with visual examples for padding, margin, and borders.  Use different colors for different things
+
+Margin: it is a gap between one item and other 
+
+border: it is border of the element
+
+padding: padding is space between content and border
+
+content : space for content of the element

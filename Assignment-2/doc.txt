@@ -1,0 +1,13 @@
+Styled HTML page using different selectors, including pseudo-classes like :hover and :nth-child
+
+
+Selectors : 
+
+Element Selector: element selector selects HTML elements based on the element name
+
+Id selector: id selector uses the id attribute of an HTML element to select a specific element
+
+class selector : class selector selects HTML elements with a specific class attribute
+
+* selector: it is a parent selector apply to whole document
+

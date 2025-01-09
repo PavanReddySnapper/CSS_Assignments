@@ -1,0 +1,4 @@
+Designed a paragraph-heavy webpage with custom Google Fonts and text styling.
+
+I have used custom font-families from google fonts and used different font styles
+Used different text styles and sizes.

@@ -1,0 +1,7 @@
+Created a fully responsive, multi-page portfolio website showcasing your CSS skills.
+
+Used Flexbox and Grid for layout.
+
+Included animations, transitions, and responsive design.
+
+Integrated custom fonts and use CSS variables

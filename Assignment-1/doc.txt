@@ -1,0 +1,6 @@
+Styled a basic HTML page with three stylings
+
+->inline styling : adding style within the html elements
+->internal styling : using style element in head element of html file
+->external styling : adding style in seperate file with .css extension and linking this file with html file using 'link' element in head tag
+
