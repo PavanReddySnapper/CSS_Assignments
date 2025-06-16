@@ -1,10 +1,117 @@
-.container-3{
-    background-color: rgb(226, 43, 171);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.header-2
-{
-    background-color: rgb(192, 126, 39);
+
+body {
+  font-family: Arial, sans-serif;
 }
-.container-3 p{
-    font-size: 20px;
+
+.site-header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav .nav-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.site-nav .nav-list li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+.main-content {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.main-content h1,
+.main-content h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filler p {
+  margin-bottom: 20px;
+}
+
+
+section{
+    min-height: 100vh;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.site-header.relative {
+  position: relative;
+}
+
+.main-content {
+  padding-top: 100px; /* create space under the fixed header */
+}
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.floating-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-header.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.static-header {
+  position: relative;
+}
+
+.main-content {
+  padding-top: 100px;
 }

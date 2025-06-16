@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .container-2{
-            background-color: rgb(43, 226, 113);
-        }
-        .header
-        {
-            background-color: burlywood;
-        }
-        .container-2 p{
-            font-size: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header with Navigation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container-1" style="background-color: aqua;">
-        <h1 style="color: rgb(25, 25, 36);">Hello World!</h1>
-        <p style="background-color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam earum
-            itaque ut modi inventore ipsum laborum
-            amet id excepturi dolorum, velit sint nulla quos aliquid quidem ratione labore culpa a.</p>
-    </div>
-    <div class="container-2">
-        <h1 class="header">Hello world!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa incidunt quidem assumenda dicta nam,
-            similique fugiat accusamus repellendus, quod quam animi nesciunt perferendis, cupiditate unde! Hic dicta
-            laudantium quam assumenda?</p>
-    </div>
-    <div class="container-3">
-        <h1 class="header-2">Hello world!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa incidunt quidem assumenda dicta nam,
-            similique fugiat accusamus repellendus, quod quam animi nesciunt perferendis, cupiditate unde! Hic dicta
-            laudantium quam assumenda?</p>
-    </div>
-</body>
 
+  <header class="site-header floating-header">
+    <div class="container">
+      <div class="logo">MyWebsite</div>
+      <nav class="site-nav">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section>
+      <h1>Welcome to My Website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis, metus nec ullamcorper laoreet, elit mauris tincidunt quam, at egestas nisi lorem et odio. Mauris tincidunt feugiat orci, a tincidunt velit hendrerit non.</p>
+    </section>
+
+    <!-- Repeat content to enable scrolling -->
+    <section>
+      <h2>More Content</h2>
+      <p>Aliquam erat volutpat. In quis justo eu mauris fermentum tincidunt. Sed tincidunt, nibh a gravida volutpat, risus nunc tristique magna, sit amet dapibus mauris velit in nunc.</p>
+    </section>
+
+    <section>
+      <h2>Even More Content</h2>
+      <p>Praesent vehicula dignissim ante, ut feugiat velit sollicitudin sed. Suspendisse nec justo nisl. Etiam vitae orci ac ante vestibulum sodales sed et quam.</p>
+    </section>
+
+    <!-- Add filler paragraphs to simulate long page -->
+    <div class="filler">
+      <p>Scroll down to test header behavior...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+      <p>Lorem ipsum dolor sit amet...</p>
+    </div>
+  </main>
+<script>
+  const floatingHeader = document.querySelector('.floating-header');
+
+  function handleHeaderVisibility() {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    if (scrollY > windowHeight) {
+      floatingHeader.classList.add('hide');
+    } else {
+      floatingHeader.classList.remove('hide');
+    }
+  }
+
+  // Run on scroll
+  window.addEventListener('scroll', handleHeaderVisibility);
+
+  // Run once on page load
+  window.addEventListener('load', handleHeaderVisibility);
+</script>
+
+
+
+</body>
 </html>
